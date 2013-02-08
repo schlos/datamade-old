@@ -10,7 +10,7 @@
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}
             
     / Styles
-    = include_stylesheet "bootstrap.spacelab.min"
+    = include_stylesheet "bootstrap.cerulean.min"
     = include_stylesheet "bootstrap-responsive"
     = include_stylesheet :custom
     = include_stylesheet "code_highlighting"
@@ -21,96 +21,36 @@
       = include_javascript "http://html5shim.googlecode.com/svn/trunk/html5.js"
 
   %body
+    .navbar
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => '/'} DataMade
+          .container.nav-collapse
+            %ul.nav
+              %li
+                %a{:href => '#what-we-do'} What we do
+              %li
+                %a{:href => '#who-we-are'} Who we are
+              %li
+                %a{:href => '#our-philosophy'} Our philosophy
+              %li
+                %a{:href => '#contact-us'} Contact us
+
     .container
       .row
-        .span3.content-secondary
-          %h2 
-            %a{:href => "/"} Derek Eder
-
-          %h4 Open Data Web Developer
-          .hidden-phone
-            %img.pull-left.img-polaroid.headshot{:src => "/images/derek.jpg", :alt=> "Derek Eder", :title => "Derek Eder"}
-            %p
-              Based in Chicago, I like working with open data and creating open source apps and tools with it.
-            %hr
-            .clearfix
-
-            %p
-              %strong
-                Owner of 
-                %a{:href => "/datamade"} DataMade
-              %br
-              %a{:href => "http://en.wikipedia.org/wiki/Open_government"} Open government
-              and
-              %a{:href => "http://en.wikipedia.org/wiki/Open_data"} open data
-              web consulting company
-            %p
-              %strong
-                Co-founder of
-                %a{:href => "http://opencityapps.org/"} Open City
-              %br
-              Group of volunteers that create civic web apps with open data
-            %p
-              %strong
-                Organizer for
-                %a{:href => "http://www.meetup.com/OpenGovChicago/"} OpenGov Chicago
-              %br
-              Meetup group centered around open government in Chicago(-land)
-          
-            %p
-              %a{:href => "mailto:derek.eder+de@gmail.com"} Email
-              or
-              %a{:href => "http://twitter.com/derekeder"} tweet
-              at me.
-
-            %p.social
-              %a{:href => "https://github.com/derekeder"}
-                %img{:alt => "Derek Eder on Github", :src => "/images/social/github.png", :title => "Derek Eder on Github"}
-              %a{:href => "https://twitter.com/derekeder"}
-                %img{:alt => "Derek Eder on Twitter", :src => "/images/social/twitter.png", :title => "Derek Eder on Twitter"}
-              %a{:href => "http://www.linkedin.com/in/derekeder"}
-                %img{:alt => "Derek Eder on LinkedIn", :src => "/images/social/linkedin.png", :title => "Derek Eder on LinkedIn"}
-
-          .clearfix
-        
-        .span9
-          .well.content-primary
-            %ul.nav.nav-pills
-              %li{:class => current_menu_class("home")}
-                %a{:href => "/"} 
-                  Home
-              %li{:class => current_menu_class("tools")}
-                %a{:href => "/tools"} 
-                  Tools
-              %li{:class => current_menu_class("maps")}
-                %a{:href => "/maps"} 
-                  Maps
-              %li{:class => current_menu_class("websites")}
-                %a{:href => "/websites"} 
-                  Websites
-              %li{:class => current_menu_class("blog")}
-                %a{:href => "/blog"} 
-                  Blog
-              %li{:class => current_menu_class("talks")}
-                %a{:href => "/talks"} 
-                  Talks
-              %li{:class => current_menu_class("datamade")}
-                %a{:href => "/datamade"} 
-                  DataMade
-            %hr
-            = yield
+        .span12
+          = yield
       
     %footer.footer
       .span12
-        / %p.pull-left
-        /   - unless @page_path.nil?
-        /     = link_to "See this page on Github", view_page_source(@page_path)
         %p.pull-right
-          %a{:href => "https://twitter.com/derekeder"} @derekeder
+          %a{:href => "mailto:derek.eder+de@gmail.com"} Email us
           |
-          %a{:href => "mailto:derek.eder+de@gmail.com"} Email me
-          |
-          &copy; Derek Eder
+          &copy; DataMade, LLC
     
     = include_javascript :jquery
     = include_javascript :bootstrap
