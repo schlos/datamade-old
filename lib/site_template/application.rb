@@ -30,6 +30,16 @@ module SiteTemplate
       @title = 'DataMade - Tell a story with your data'
       haml :index
     end
+
+    # utility for flushing cache
+    get "/flush_cache" do
+      if memcache_servers = ENV["MEMCACHE_SERVERS"]
+        require 'dalli'
+        dc = Dalli::Client.new
+        dc.flush
+      end
+      redirect "/"
+    end
     
     # catchall for static pages
     get "/:page/?" do
