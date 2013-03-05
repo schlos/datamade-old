@@ -9,3 +9,8 @@ body {
 #mapCanvas img {
   max-width: none;
 }
+
+.clients img {
+    margin-right: 30px;
+    margin-top: 10px;
+}

@@ -3,54 +3,67 @@
     DataMade
   %p.lead Tell a story with your data
 
-  %p.lead
-    We are an 
-    %a{:href => "http://en.wikipedia.org/wiki/Open_government"} open government
-    and
-    %a{:href => "http://en.wikipedia.org/wiki/Open_data"} open data
-    web consulting company in Chicago.
-
 %hr
 %h2#what-we-do What we do
+
+%p.lead
+  We are an 
+  %a{:href => "http://en.wikipedia.org/wiki/Open_government"} open government
+  and
+  %a{:href => "http://en.wikipedia.org/wiki/Open_data"} open data
+  web consulting company in Chicago.
 
 .row-fluid
   .span6
     %h4 Custom maps and visualizations
     %p
-      Not many people enjoy poring over spreadsheets and databases, but we do. Using a variety of 
-      %a{:href => '/searchable_map_template'} tools 
-      and experience, DataMade can help your organization distill a pile of data into a clear and concise map or visualization. 
+      Using a variety of 
+      %a{:href => 'http://derekeder.com/searchable_map_template'} tools 
+      and experience, we can help your organization distill a pile of data into a clear and concise map or visualization. 
 
   .span6
     %h4 Deploy civic apps
     %p
-      If you like any of the projects Derek or
+      We can bring any civic app by
+      %a{:href => 'http://derekeder.com'} Derek 
+      or
       %a{:href => 'http://opencityapps.org'} Open City 
-      have worked on and would like to bring them to your municipality or organization, DataMade can do that for you. The applications can be modified or enhanced, but must remain open source (see 
-      = succeed ')' do
-        %a{:href => '#the-three-os'} The Three Os
+      to your municipality or organization. The applications can be modified or enhanced, but must remain open source.
   
 .row-fluid
   .span6
     %h4 Data cleanup and analysis
     %p
-      When you open your data to the rest of the world, wonderful and unexpected things can happen. Developers build useful tools around them, and everyone benefits. DataMade can help guide you through the process of cleaning up, 
-      %a{:href => 'https://github.com/open-city/dedupe/wiki'} de-duplicating 
+      We can help guide you through the process of cleaning up, 
+      %a{:href => 'https://github.com/open-city/dedupe'} de-duplicating 
       and releasing your data to make it easily accessible for developers, all while keeping sensitive information secure.
   .span6
-    %h4 Training to tell stories with open data
+    %h4 Training and education
     %p
-      We live in a time where an unprecedented amount of data is being gathered and published by governments, companies and organizations. DataMade can help you to understand, interpret and tell the stories behind all this open data. Journalists welcome!
+      We live in a time where an unprecedented amount of data is being gathered and published by governments, companies and organizations. We can help you to understand, interpret and tell the stories behind all this open data. Journalists welcome!
 
 %hr
 %h2#what-weve-built What we've built
 
 .row-fluid
   .span6 
-    %h4 Searchable Map Template
+    %a{:href => "http://derekeder.com/searchable_map_template/"}
+      %img.img-polaroid{:src => "/images/tools/searchable_map_template.jpg", :title => "Searchable Map Template with Google Fusion Tables"}
+      %h4
+        Searchable Map Template
+    %p
+      Put your data on a searchable, filterable map. This is a free, open source tool and template powered by Google 
+      %a{:href => "http://google.com/fusiontables/Home/"} Fusion Tables
+      that allows anyone to make a powerful map in minutes.
+        
 
   .span6
-    %h4 Dedupe
+    %a{:href => "https://github.com/open-city/dedupe"}
+      %img.img-polaroid{:src => "/images/tools/dedupe.jpg", :title => "Dedupe"}
+      %h4
+        Dedupe
+    %p
+      An open source python library that quickly de-duplicates large sets of data on a laptop using machine learning.
 
       
 %hr
@@ -62,10 +75,15 @@
       .span6
         %img.img-polaroid{:src => "/images/derek-eder.jpg"}
         %h4 Derek Eder
+        %p 
+          Derek is a web developer with a passion for open government, open source and open data. He is a co-founder of
+          = succeed '.' do
+            %a{:href => 'http://opencityapps.org'} Open City
 
       .span6
         %img.img-polaroid{:src => "/images/forest-gregg.jpg"}
         %h4 Forest Gregg
+        %p Forest is a Sociology Ph.D. student at the University of Chicago with an interest in machine learning.
 
   .span6
     %h2#our-philosophy Our philosophy
@@ -91,16 +109,23 @@
 %hr
 %h2#clients Clients
 
-Smart Chicago Collaborative
-WBEZ
-ICPR
-EOI
+%p.clients
+
+  %a{:href => 'http://www.smartchicagocollaborative.org/'}
+    %img{:src => '/images/clients/smart-chicago.jpg', :alt => 'Smart Chicago Collaborative'}
+
+  %a{:href => 'http://www.ilcampaign.org/'}
+    %img{:src => '/images/clients/icpr.jpg', :alt => 'Illinois Campaign for Political Reform'}
+
+  %a{:href => 'http://wbez.org/'}
+    %img{:src => '/images/clients/wbez.jpg', :alt => 'WBEZ 91.5'}
+
+  %a{:href => 'http://www.eoionline.org/'}
+    %img{:src => '/images/clients/eoi.jpg', :alt => 'Economic Opportunity Institute'}
 
 %hr
 %h2#contact-us Contact us
 %p
-  If you would like to engage DataMade, send Derek an 
-  %a{:href => "mailto:derek.eder+de@gmail.com"} email
-  or
+  If you would like to engage DataMade or talk to us about our work 
   = succeed '.' do
-    %a{:href => "http://twitter.com/derekeder"} tweet
+    %a{:href => "mailto:info@datamade.us"} email us
