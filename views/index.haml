@@ -1,17 +1,17 @@
 .home-header
   %h1
     DataMade
-  %p.lead Tell a story with your data
-
-%hr
-%h2#what-we-do What we do
 
 %p.lead
   We are an 
-  %a{:href => "http://en.wikipedia.org/wiki/Open_government"} open government
-  and
   %a{:href => "http://en.wikipedia.org/wiki/Open_data"} open data
-  web consulting company in Chicago.
+  web development and consulting company in Chicago.
+
+%hr
+%h2#projects Tell a story with your data
+
+%hr
+%h2#what-we-do What we do
 
 .row-fluid
   .span6
@@ -28,32 +28,33 @@
       %i.icon-wrench
       Deploy civic apps
     %p
-      We can bring any civic app built by
-      %a{:href => 'http://derekeder.com'} Derek 
+      = succeed ',' do
+        %a{:href => 'http://lookatcook.com'} Visualize your budgets
+      %a{:href => 'http://chicagobuildings.org'} map vacant buildings
       or
-      %a{:href => 'http://opencityapps.org'} Open City 
-      to your municipality or organization. The applications can be modified or enhanced, but must remain open source.
-  
+      %a{:href => 'http://clearstreets.org'} track snow plows
+      in your municipality or organization. 
+      More examples of deployable apps 
+      = succeed '.' do
+        %a{:href => 'http://opencityapps.org'} here
 .row-fluid
   .span6
     %h4 
       %i.icon-signal
       Data cleanup and analysis
     %p
-      We can help guide you through the process of cleaning up, 
-      %a{:href => 'https://github.com/open-city/dedupe'} de-duplicating 
-      and releasing your data to make it easily accessible for developers, all while keeping sensitive information secure.
+      Clean up, 
+      %a{:href => 'https://github.com/open-city/dedupe'} de-duplicate 
+      and release your data to make it easily accessible for developers, all while keeping sensitive information secure.
   .span6
     %h4 
       %i.icon-info-sign
       Training and education
     %p
-      We live in a time where an unprecedented amount of data is being gathered and published by governments, companies and organizations. We can help you to understand, interpret and tell the stories behind all this open data. Journalists welcome!
+      An unprecedented amount of data is being gathered and published by governments, companies and organizations. Understand, interpret and tell the stories behind all this open data.
 
 %hr
-%h2#tools-weve-built Tools we've built
-
-%p We work exclusively with open source software. Every project we work on, we use to build on and improve for others to use and benefit from.
+%h2#our-open-source-tools Our open source tools
 
 .row-fluid
   .span6 
@@ -75,7 +76,6 @@
     %p
       An open source python library that quickly de-duplicates large sets of data on a laptop using machine learning.
 
-      
 %hr
 .row-fluid
   .span6
@@ -134,12 +134,15 @@
   %a{:href => 'http://wbez.org/'}
     %img{:src => '/images/clients/wbez.jpg', :alt => 'WBEZ 91.5'}
 
-  / %a{:href => 'http://www.eoionline.org/'}
-  /   %img{:src => '/images/clients/eoi.jpg', :alt => 'Economic Opportunity Institute'}
+  %a{:href => 'http://www.eoionline.org/'}
+    %img{:src => '/images/clients/eoi.jpg', :alt => 'Economic Opportunity Institute'}
 
 %hr
 %h2#contact-us Contact us
 %p
-  If you would like to engage DataMade or talk to us about our work 
+  To engage DataMade or talk to us about our work 
   = succeed '.' do
     %a{:href => "mailto:info@datamade.us"} email us
+  or find us at 
+  = succeed '.' do
+    %a{:href => "http://1871.com"} 1871

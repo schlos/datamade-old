@@ -1,13 +1,14 @@
 body {
   font-size: 16px;
-}
-
-.home-header {
-  text-align: center;
+  padding-top: 80px;
 }
 
 .home-header h1 {
     font-size: 60px;
+}
+
+.home-header h1 small {
+    font-size: 16px;
 }
 
 #mapCanvas img {
