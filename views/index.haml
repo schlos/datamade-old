@@ -3,12 +3,58 @@
     DataMade
 
 %p.lead
-  We are an 
-  %a{:href => "http://en.wikipedia.org/wiki/Open_data"} open data
-  web development and consulting company in Chicago.
+  We are an open data web development and consulting company in Chicago.
 
 %hr
 %h2#projects Tell a story with your data
+
+.projects-list
+  .row-fluid
+    .span4
+      %a{:href => "http://weconnectchicago.org"}
+        %img.img-polaroid{:src => "/images/projects/connect-chicago.jpg", :title => "Connect Chicago"}
+      %h4
+        %a{:href => "http://weconnectchicago.org"} Connect Chicago
+        %small
+          %br
+          Data cleanup, custom maps
+      %p
+        Searchable map and website to find free public computer centers and training.
+
+    .span4
+      %a{:href => "http://chicagoearlylearning.org/"}
+        %img.img-polaroid{:src => "/images/projects/chicago-early-learning.jpg", :title => "Chicago Early Learning"}
+      %h4
+        %a{:href => "http://chicagoearlylearning.org/"} Chicago Early Learning
+        %small
+          %br
+          Data cleanup
+      %p
+        Tool for finding and comparing preschools, head start and other early childhood education programs.
+
+    .span4
+      %a{:href => "http://www.chicagohealthatlas.org/"}
+        %img.img-polaroid{:src => "/images/projects/chicago-health-atlas-2.jpg", :title => "Chicago Health Atlas"}
+      %h4
+        %a{:href => "http://www.chicagohealthatlas.org/"} Chicago Health Atlas
+        %small
+          %br
+          Data cleanup, custom visualizations
+      %p
+        %em In progress. 
+        Explore and compare citywide information about neighborhood health trends and resources.
+
+  / .row-fluid      
+  /   .span4
+  /     %a{:href => "http://wbez.org/"}
+  /       %img.img-polaroid{:src => "/images/projects/wbez-2.jpg", :title => "WBEZ"}
+  /     %h4
+  /       %a{:href => "http://wbez.org/"} WBEZ data journalism training
+  /       %small
+  /         %br
+  /         Training and education
+  /     %p
+  /       Training reporters to use open source tools to clean up, understand and visualize data.
 
 %hr
 %h2#what-we-do What we do
@@ -26,14 +72,14 @@
   .span6
     %h4 
       %i.icon-wrench
-      Deploy civic apps
+      Civic app deployment
     %p
       = succeed ',' do
         %a{:href => 'http://lookatcook.com'} Visualize your budgets
       %a{:href => 'http://chicagobuildings.org'} map vacant buildings
       or
       %a{:href => 'http://clearstreets.org'} track snow plows
-      in your municipality or organization. 
+      for your municipality or organization. 
       More examples of deployable apps 
       = succeed '.' do
         %a{:href => 'http://opencityapps.org'} here
@@ -100,7 +146,7 @@
     %p 
       To work with DataMade, your project must subscribe to the 
       = succeed '.' do
-        %strong Three O's
+        %strong Three Os
       They are:
 
     %ol
@@ -141,8 +187,8 @@
 %h2#contact-us Contact us
 %p
   To engage DataMade or talk to us about our work 
-  = succeed '.' do
+  = succeed ',' do
     %a{:href => "mailto:info@datamade.us"} email us
-  or find us at 
+  or come find us at 
   = succeed '.' do
     %a{:href => "http://1871.com"} 1871
