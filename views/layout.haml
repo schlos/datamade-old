@@ -31,7 +31,7 @@
           .container.nav-collapse
             %ul.nav
               %li
-                %a{:href => '#'} Home
+                %a{:href => '#home'} Home
               %li
                 %a{:href => '#projects'} Projects
               %li
@@ -40,8 +40,6 @@
                 %a{:href => '#our-open-source-tools'} Tools
               %li
                 %a{:href => '#who-we-are'} Who we are
-              %li
-                %a{:href => '#our-philosophy'} Philosophy
               %li
                 %a{:href => '#clients'} Clients
               %li
@@ -62,6 +60,17 @@
     = include_javascript :jquery
     = include_javascript :bootstrap
     = content :javascripts
+
+    :javascript
+      $(function(){
+        $(".nav a").click(function() {
+          var elementClicked = $(this).attr("href");
+          var destination = $(elementClicked).offset().top;
+          $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-75}, 500 );
+          $(".nav li").removeClass("active");
+          $(this).parent().addClass("active");
+        });
+      });
 
     = include_javascript :"analytics_lib" if production?
 
