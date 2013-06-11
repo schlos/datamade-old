@@ -9,7 +9,66 @@
 %h2#projects Tell a story with your data
 
 .projects-list
+  .row-fluid  
+    .span4
+      %a{:href => "http://www.chicagohealthatlas.org/"}
+        %img.img-polaroid{:src => "/images/projects/chicago-health-atlas-2.jpg", :title => "Chicago Health Atlas"}
+      %h4
+        %a{:href => "http://www.chicagohealthatlas.org/"} Chicago Health Atlas
+        %small
+          %br
+          Data cleanup, custom visualizations
+          %br
+          Client: 
+          %a.client-link{:href => 'http://www.smartchicagocollaborative.org/projects/chicago-health-atlas/'} Smart Chicago Collaborative
+      %p
+        View citywide information about health trends and take action near you to improve your own health.
+
+    .span4
+      %a{:href => "http://microboundaries.com"}
+        %img.img-polaroid{:src => "/images/projects/gfry-microboundaries.jpg", :title => "Micro Boundaries"}
+      %h4
+        %a{:href => "http://microboundaries.com"} Micro Boundaries
+        %small
+          %br
+          Custom visualizations
+          %br
+          Client: 
+          %a.client-link{:href => 'http://www.saic.edu/'} School of the Art Institute of Chicago
+      %p
+        A project by SAIC design students Moe Beitiks and Brooke Collins. Find a home for five beneficial bacteria by interpreting their needs, exploring your city and taking photos with Instagram.
+
+    .span4
+      %a{:href => "http://stateofworkingwa.org/budget/"}
+        %img.img-polaroid{:src => "/images/projects/look-at-wa.jpg", :title => "The State of Washington Budget"}
+      %h4
+        %a{:href => "http://stateofworkingwa.org/budget/"} The State of Washington Budget
+        %small
+          %br
+          Civic app deployment
+          %br
+          Client: 
+          %a.client-link{:href => 'http://www.eoionline.org/'} Economic Opportunity Institute
+      %p
+        A re-deployment and customization of the 
+        %a{:href => 'http://lookatcook.com'} Look at Cook 
+        budget visualization platform for the State of Washington Budget.
+
   .row-fluid
+    .span4
+      %a{:href => "http://chicagocube.org/"}
+        %img.img-polaroid{:src => "/images/projects/gfry-chicagocube.jpg", :title => "Chicago Cube"}
+      %h4
+        %a{:href => "http://microboundaries.com/"} Chicago Cube
+        %small
+          %br
+          Custom visualizations
+          %br
+          Client: 
+          %a.client-link{:href => 'http://www.saic.edu/'} School of the Art Institute of Chicago
+      %p
+        A project by SAIC design student Amarinh Kongmanivong. Plant a Gerbera daisy, share a photo of it on Instagram, watch it grow.
+
     .span4
       %a{:href => "http://weconnectchicago.org"}
         %img.img-polaroid{:src => "/images/projects/connect-chicago.jpg", :title => "Connect Chicago"}
@@ -37,33 +96,6 @@
           %a.client-link{:href => 'http://www.smartchicagocollaborative.org/the-launch-of-chicago-early-learning/'} Smart Chicago Collaborative
       %p
         Tool for finding and comparing preschools, head start and other early childhood education programs.
-
-    .span4
-      %a{:href => "http://www.chicagohealthatlas.org/"}
-        %img.img-polaroid{:src => "/images/projects/chicago-health-atlas-2.jpg", :title => "Chicago Health Atlas"}
-      %h4
-        %a{:href => "http://www.chicagohealthatlas.org/"} Chicago Health Atlas
-        %small
-          %br
-          Data cleanup, custom visualizations
-          %br
-          Client: 
-          %a.client-link{:href => 'http://www.smartchicagocollaborative.org/projects/chicago-health-atlas/'} Smart Chicago Collaborative
-      %p
-        %em In progress. 
-        View citywide information about health trends and take action near you to improve your own health.
-
-  / .row-fluid      
-  /   .span4
-  /     %a{:href => "http://wbez.org/"}
-  /       %img.img-polaroid{:src => "/images/projects/wbez-2.jpg", :title => "WBEZ"}
-  /     %h4
-  /       %a{:href => "http://wbez.org/"} WBEZ data journalism training
-  /       %small
-  /         %br
-  /         Training and education
-  /     %p
-  /       Training reporters to use open source tools to clean up, understand and visualize data.
 
 %hr
 %h2#what-we-do What we do
@@ -109,7 +141,7 @@
       An unprecedented amount of data is being gathered and published by governments, companies and organizations. Understand, interpret and tell the stories behind all this open data.
 
 %hr
-%h2#our-open-source-tools Our open source tools
+%h2#our-open-source-tools Open source tools
 
 .row-fluid
   .span6 
@@ -151,7 +183,7 @@
         %p Forest is a Sociology Ph.D. student at the University of Chicago with a background in machine learning and statistics.
 
   .span6
-    %h2#our-philosophy Our philosophy
+    %h2#our-philosophy Philosophy
     %p 
       To work with DataMade, your project must subscribe to the 
       = succeed '.' do
