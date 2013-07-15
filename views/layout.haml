@@ -42,8 +42,8 @@
                 %a{:href => '#who-we-are'} Who we are
               %li
                 %a{:href => '#clients'} Clients
-              %li
-                %a{:href => '#contact-us'} Contact
+            %p.pull-right
+              %a.btn.btn-danger{:href => 'mailto:derek.eder+datamade@gmail.com'} Contact us
 
     .container
       .row
@@ -53,9 +53,11 @@
     %footer.footer
       .span12
         %p.pull-right
-          %a{:href => "mailto:info@datamade.us"} Email us
+          %a{:href => "mailto:derek.eder+datamade@gmail.com"} Email us
           |
-          &copy; DataMade, LLC
+          %a{:href => "https://twitter.com/DataMadeCo"} @DataMadeCo
+          |
+          &copy; DataMade
     
     = include_javascript :jquery
     = include_javascript :bootstrap
