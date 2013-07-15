@@ -13,6 +13,7 @@
 
     = include_stylesheet "bootstrap.cerulean.min"
     = include_stylesheet "bootstrap-responsive"
+    = include_stylesheet "font-awesome/css/font-awesome.min"
     = include_stylesheet :custom
     = content :stylesheets
     
@@ -43,7 +44,7 @@
               %li
                 %a{:href => '#clients'} Clients
             %p.pull-right
-              %a.btn.btn-danger{:href => 'mailto:derek.eder+datamade@gmail.com'} Contact us
+              %a.btn.btn-danger{:href => 'mailto:derek.eder+datamade+c@gmail.com'} Contact us
 
     .container
       .row
@@ -53,11 +54,15 @@
     %footer.footer
       .span12
         %p.pull-right
-          %a{:href => "mailto:derek.eder+datamade@gmail.com"} Email us
+          %a{:href => "mailto:derek.eder+datamade+e@gmail.com"} Email us
           |
-          %a{:href => "https://github.com/datamade"} Github
+          %a{:href => "https://github.com/datamade"} 
+            %i.icon-github 
+            Github
           |
-          %a{:href => "https://twitter.com/DataMadeCo"} Twitter
+          %a{:href => "https://twitter.com/DataMadeCo"} 
+            %i.icon-twitter
+            Twitter
           |
           &copy; DataMade
     
