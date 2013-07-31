@@ -1,5 +1,5 @@
 .home-header
-  %h1#home
+  %h1
     DataMade
 
 %p.lead
@@ -7,7 +7,44 @@
   %a{:href => "mailto:info@datamade.us"} Hire us &raquo;
 
 %hr
-%h2#projects Tell a story with your data
+%h2 
+  %a(href='/products')
+    Products
+    %small more &raquo;
+
+.row-fluid
+  .span4 
+    %a{:href => "searchable-map-template"}
+      %img.img-polaroid{:src => "/images/products/searchable_map_template.jpg", :title => "Searchable Map Template with Google Fusion Tables"}
+      %h4
+        Searchable Map Template
+    %p
+      Put your data on a searchable, filterable map. This is a free, open source tool and template powered by Google 
+      %a{:href => "http://google.com/fusiontables/Home/"} Fusion Tables
+      that allows anyone to make a powerful map in minutes.
+        
+  .span4
+    %a{:href => "dedupe"}
+      %img.img-polaroid{:src => "/images/products/dedupe.jpg", :title => "Dedupe"}
+      %h4
+        Dedupe
+    %p
+      An open source python library that quickly de-duplicates large sets of data on a laptop using machine learning.
+
+  .span4
+    %a{:href => "look-at-cook"}
+      %img.img-polaroid{:src => "/images/products/lookatcook.jpg", :title => "Dedupe"}
+      %h4
+        Look at Cook
+    %p
+      An open source and open data budget visualization platform.
+
+
+%hr
+%h2
+  %a(href='/projects')
+    Our work
+    %small more &raquo;
 
 .projects-list
   .row-fluid  
@@ -55,51 +92,11 @@
         %a{:href => 'http://lookatcook.com'} Look at Cook 
         budget visualization platform for the State of Washington Budget.
 
-  .row-fluid
-    .span4
-      %a{:href => "http://chicagocube.org/"}
-        %img.img-polaroid{:src => "/images/projects/gfry-chicagocube.jpg", :title => "Chicago Cube"}
-      %h4
-        %a{:href => "http://microboundaries.com/"} Chicago Cube
-        %small
-          %br
-          Custom visualizations
-          %br
-          Client: 
-          %a.client-link{:href => 'http://www.saic.edu/'} School of the Art Institute of Chicago
-      %p
-        A project by SAIC design student Amarinh Kongmanivong. Plant a Gerbera daisy, share a photo of it on Instagram, watch it grow.
-
-    .span4
-      %a{:href => "http://weconnectchicago.org"}
-        %img.img-polaroid{:src => "/images/projects/connect-chicago.jpg", :title => "Connect Chicago"}
-      %h4
-        %a{:href => "http://weconnectchicago.org"} Connect Chicago
-        %small
-          %br
-          Data cleanup, custom maps
-          %br
-          Client: 
-          %a.client-link{:href => 'http://www.smartchicagocollaborative.org/the-launch-of-connect-chicago/'} Smart Chicago Collaborative
-      %p
-        Searchable map and website to find free public computer centers and training.
-
-    .span4
-      %a{:href => "http://chicagoearlylearning.org/"}
-        %img.img-polaroid{:src => "/images/projects/chicago-early-learning.jpg", :title => "Chicago Early Learning"}
-      %h4
-        %a{:href => "http://chicagoearlylearning.org/"} Chicago Early Learning
-        %small
-          %br
-          Data cleanup
-          %br
-          Client: 
-          %a.client-link{:href => 'http://www.smartchicagocollaborative.org/the-launch-of-chicago-early-learning/'} Smart Chicago Collaborative
-      %p
-        Tool for finding and comparing preschools, head start and other early childhood education programs.
-
 %hr
-%h2#what-we-do What we do
+%h2
+  %a(href='/services')
+    Services
+    %small more &raquo;
 
 .row-fluid
   .span6
@@ -128,7 +125,7 @@
 .row-fluid
   .span6
     %h4 
-      %i.icon-signal
+      %i.icon-sitemap
       Data cleanup and analysis
     %p
       Clean up, 
@@ -142,74 +139,7 @@
       An unprecedented amount of data is being gathered and published by governments, companies and organizations. Understand, interpret and tell the stories behind all this open data.
 
 %hr
-%h2#our-open-source-tools Open source tools
-
-.row-fluid
-  .span6 
-    %a{:href => "http://derekeder.com/searchable_map_template/"}
-      %img.img-polaroid{:src => "/images/tools/searchable_map_template.jpg", :title => "Searchable Map Template with Google Fusion Tables"}
-      %h4
-        Searchable Map Template
-    %p
-      Put your data on a searchable, filterable map. This is a free, open source tool and template powered by Google 
-      %a{:href => "http://google.com/fusiontables/Home/"} Fusion Tables
-      that allows anyone to make a powerful map in minutes.
-        
-
-  .span6
-    %a{:href => "https://github.com/open-city/dedupe"}
-      %img.img-polaroid{:src => "/images/tools/dedupe.jpg", :title => "Dedupe"}
-      %h4
-        Dedupe
-    %p
-      An open source python library that quickly de-duplicates large sets of data on a laptop using machine learning.
-
-%hr
-.row-fluid
-  .span6
-    %h2#who-we-are Who we are
-
-    .row-fluid
-      .span6
-        %img.img-polaroid{:src => "/images/derek-eder.jpg"}
-        %h4 Derek Eder
-        %p 
-          Derek is a web developer with a passion for open government, open source and open data. He is a co-founder of
-          = succeed '.' do
-            %a{:href => 'http://opencityapps.org'} Open City
-
-      .span6
-        %img.img-polaroid{:src => "/images/forest-gregg.jpg"}
-        %h4 Forest Gregg
-        %p Forest is a Sociology Ph.D. student at the University of Chicago with a background in machine learning and statistics.
-
-  .span6
-    %h2#our-philosophy Philosophy
-    %p 
-      To work with DataMade, your project must subscribe to the 
-      = succeed '.' do
-        %strong Three Os
-      They are:
-
-    %ol
-      %li
-        %p 
-          %strong Open data
-          %br
-          The project uses data that is entirely open and free to use by anyone.
-      %li
-        %p
-          %strong Open source
-          %br
-          All apps and tools developed are open source and released under an unrestrictive license.
-      %li
-        %p
-          %strong Open government
-          %br
-          The project is civic-minded. It engages and informs citizens about their society, city, or government.
-
-%hr
-%h2#clients Clients
+%h2 Clients
 
 %p.clients
 
