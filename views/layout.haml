@@ -22,7 +22,7 @@
       = include_javascript "http://html5shim.googlecode.com/svn/trunk/html5.js"
 
   %body
-    .navbar.navbar-fixed-top
+    .navbar
       .navbar-inner
         .container
           %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
@@ -32,12 +32,10 @@
           %a.brand{:href => '/'} DataMade
           .container.nav-collapse
             %ul.nav                    
-              %li{:class => (@current_menu == 'products' ? 'active' : '')}
-                %a{:href => '/products'} Products
+              %li
+                %a{:href => '/#products'} Products
               %li{:class => (@current_menu == 'projects' ? 'active' : '')}
                 %a{:href => '/projects'} Our work
-              %li{:class => (@current_menu == 'services' ? 'active' : '')}
-                %a{:href => '/services'} Services
               %li{:class => (@current_menu == 'about' ? 'active' : '')}
                 %a{:href => '/about'} About us
             %p.pull-right
@@ -67,17 +65,4 @@
     = include_javascript :jquery
     = include_javascript :bootstrap
     = content :javascripts
-
-    :javascript
-      $(function(){
-        $(".nav a").click(function() {
-          var elementClicked = $(this).attr("href");
-          var destination = $(elementClicked).offset().top;
-          $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-75}, 500 );
-          $(".nav li").removeClass("active");
-          $(this).parent().addClass("active");
-        });
-      });
-
     = include_javascript :"analytics_lib" if production?
-

@@ -3,14 +3,13 @@
     DataMade
 
 %p.lead
-  We build open source websites and analysis tools with open data in Chicago.
+  We build open source products and custom websites with open data in Chicago.
   %a{:href => "mailto:info@datamade.us"} Hire us &raquo;
 
 %hr
-%h2 
-  %a(href='/products')
-    Products
-    %small more &raquo;
+%h2#products Products
+
+%p Civic, <strong>open source</strong> products for your municipality or organization. <a href='mailto:info@datamade.us'>We'll customize and deploy it</a>, or you can <a href='https://github.com/datamade'>grab the code</a> yourself.
 
 .row-fluid
   .span4 
@@ -19,9 +18,9 @@
       %h4
         Searchable Map Template
     %p
-      Put your data on a searchable, filterable map. This is a free, open source tool and template powered by Google 
-      %a{:href => "http://google.com/fusiontables/Home/"} Fusion Tables
-      that allows anyone to make a powerful map in minutes.
+      %strong Put your data on a searchable map
+    %p 
+      This template, powered by Google Fusion Tables, allows anyone to make a powerful map in minutes.
         
   .span4
     %a{:href => "dedupe"}
@@ -29,7 +28,9 @@
       %h4
         Dedupe
     %p
-      An open source python library that quickly de-duplicates large sets of data on a laptop using machine learning.
+      %strong Quickly de-duplicates large sets of data
+    %p
+      An API and command line tool to help clean up and merge messy data.
 
   .span4
     %a{:href => "look-at-cook"}
@@ -37,7 +38,9 @@
       %h4
         Look at Cook
     %p
-      An open source and open data budget visualization platform.
+      %strong Visualize your budget on the web
+    %p
+      Allow anyone to dive in to your budget, discover trends, and share with others.
 
 
 %hr
@@ -45,6 +48,9 @@
   %a(href='/projects')
     Our work
     %small more &raquo;
+
+%p
+  We can help your organization distill your data into a fully customized, clear and concise map or visualization. 
 
 .row-fluid  
   .span4
@@ -90,52 +96,6 @@
       Searchable map and website to find free public computer centers and training.
 
 %hr
-%h2
-  %a(href='/services')
-    Services
-    %small more &raquo;
-
-.row-fluid
-  .span6
-    %h4 
-      %i.icon-map-marker
-      Custom maps and visualizations
-    %p
-      Using a variety of 
-      %a{:href => 'http://derekeder.com/searchable_map_template'} tools 
-      and experience, we can help your organization distill a pile of data into a clear and concise map or visualization. 
-
-  .span6
-    %h4 
-      %i.icon-wrench
-      Civic app deployment
-    %p
-      = succeed ',' do
-        %a{:href => 'http://lookatcook.com'} Visualize your budgets
-      %a{:href => 'http://chicagobuildings.org'} map vacant buildings
-      or
-      %a{:href => 'http://clearstreets.org'} track snow plows
-      for your municipality or organization. 
-      More examples of deployable apps 
-      = succeed '.' do
-        %a{:href => 'http://opencityapps.org'} here
-.row-fluid
-  .span6
-    %h4 
-      %i.icon-sitemap
-      Data cleanup and analysis
-    %p
-      Clean up, 
-      %a{:href => 'https://github.com/open-city/dedupe'} de-duplicate 
-      and release your data to make it easily accessible for developers, all while keeping sensitive information secure.
-  .span6
-    %h4 
-      %i.icon-info-sign
-      Training and education
-    %p
-      An unprecedented amount of data is being gathered and published by governments, companies and organizations. Understand, interpret and tell the stories behind all this open data.
-
-%hr
 %h2 Clients
 
 %p.clients
@@ -157,3 +117,14 @@
 
   %a{:href => 'http://communication.depaul.edu/'}
     %img{:src => '/images/clients/depaul-communication.jpg', :alt => 'DePaul College of Communication'}
+
+  %a{:href => 'http://www.participatorypolitics.org/'}
+    %img{:src => '/images/clients/ppf.jpg', :alt => 'Participatory Politics Foundation'}
+
+%hr
+%h2 Grantors
+
+%p.clients
+
+  %a{:href => 'http://www.mozillaopennews.org/'}
+    %img{:src => '/images/clients/knight-mozilla-opennews.jpg', :alt => 'Knight-Mozilla OpenNews'}
